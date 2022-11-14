@@ -78,6 +78,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -89,6 +90,45 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.projects{
+    min-height:100vh;
+    background-image: url('../assets/image.jpg');
+    background-position: center;
+    background-size: cover;
+    padding:50px 0;
+    
+}
+
+.desc{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding:30px 50px;
+  background-color: rgba(225, 225, 225, 0.5);
+  backdrop-filter: blur(3px);
+  line-height: 33px;
+  box-shadow: 6px 7px 42px -13px rgba(0,0,0,0.65);
+  color:black;
+  font-weight: 300;
+  font-size: 24px;
+  border-radius: 5px;
+  max-width:450px;
+  margin:0 auto;
+  margin-bottom:30px;
+}
+
+@media(max-width:380px){
+  .desc{
+    width:100%;
+    padding:10px;
+  }
+}
+
+.artwork img{
+  width:270px;
+  height:245px;
+  object-fit: cover;
+  cursor:pointer;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
